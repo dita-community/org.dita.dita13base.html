@@ -6,7 +6,7 @@
   version="2.0">
   <xsl:template match="*[contains(@class, ' topic/div ')]" priority="-1"
     >
-    <xsl:message> + [DEBUG] base template for topic/div: <xsl:value-of select="concat(name(..), '/', name(..))"/></xsl:message>
+    <xsl:message> + [DEBUG] base template for topic/div: <xsl:value-of select="concat(name(..), '/', name(.))"/></xsl:message>
     <div>
       <xsl:call-template name="commonattributes"/>
       <xsl:apply-templates/>
