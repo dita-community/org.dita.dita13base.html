@@ -4,8 +4,7 @@
   xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
   exclude-result-prefixes="xs xd"
   version="2.0">
-  <xsl:template match="*[contains(@class, ' topic/div ')]"
-      priority="-10"
+  <xsl:template match="*[contains(@class, ' topic/div ')]" priority="-1"
     >
     <xsl:message> + [DEBUG] base template for topic/div: <xsl:value-of select="concat(name(..), '/', name(..))"/></xsl:message>
     <div>
